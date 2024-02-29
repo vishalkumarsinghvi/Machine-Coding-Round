@@ -31,10 +31,16 @@ public class PlaySnackLadderService {
             int currentPosition = currentPlayer.getCurrentPosition();
             int rollDice = dice.rollDice();
             int upcomingPosition = currentPosition + rollDice;
-            if (snacks.containsKey(upcomingPosition) && snacks.get(upcomingPosition) != null) {
-                upcomingPosition = snacks.get(upcomingPosition);
-            } else if (ladders.containsKey(upcomingPosition) && ladders.get(upcomingPosition) != null) {
-                upcomingPosition = ladders.get(upcomingPosition);
+            if (snacks.containsKey(upcomingPosition)) {
+                Integer snackEndPosition = snacks.get(upcomingPosition);
+                if (snackEndPosition != null) {
+                    upcomingPosition = snackEndPosition;
+                }
+            } else if (ladders.containsKey(upcomingPosition)) {
+                Integer ladderEndPosition = ladders.get(upcomingPosition);
+                if (ladderEndPosition != null) {
+                    upcomingPosition = ladderEndPosition;
+                }
             }
             if (isWinnerFound(upcomingPosition, currentPlayer)) break;
             if (upcomingPosition < capacity) {
