@@ -27,7 +27,4 @@ public class Player {
         this.currentPosition = currentPosition;
     }
 
-    public Player moveToPosition(int newPosition) {
-        return new Player(id, name, newPosition);
-    }
 }
