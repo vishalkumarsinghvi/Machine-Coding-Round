@@ -1,8 +1,8 @@
-package com.vishal.machinecodinground;
+package com.vishal.machinecodinground.SnackLadders;
 
-import com.vishal.machinecodinground.model.GameEntities;
-import com.vishal.machinecodinground.model.Player;
-import com.vishal.machinecodinground.service.PlaySnackLadderService;
+import com.vishal.machinecodinground.SnackLadders.model.GameEntities;
+import com.vishal.machinecodinground.SnackLadders.model.Player;
+import com.vishal.machinecodinground.SnackLadders.service.PlaySnackLadderService;
 
 import java.util.Scanner;
 
@@ -33,7 +33,7 @@ Gaurav
 Sagar
  */
 
-public class Main {
+public class SnackLadderMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         GameEntities gameEntities = GameEntities.getInstance();

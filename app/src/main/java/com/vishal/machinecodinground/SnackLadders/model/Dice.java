@@ -1,4 +1,4 @@
-package com.vishal.machinecodinground.model;
+package com.vishal.machinecodinground.SnackLadders.model;
 
 import java.util.Random;
 

@@ -1,8 +1,8 @@
-package com.vishal.machinecodinground.service;
+package com.vishal.machinecodinground.SnackLadders.service;
 
-import com.vishal.machinecodinground.model.Dice;
-import com.vishal.machinecodinground.model.GameEntities;
-import com.vishal.machinecodinground.model.Player;
+import com.vishal.machinecodinground.SnackLadders.model.Dice;
+import com.vishal.machinecodinground.SnackLadders.model.GameEntities;
+import com.vishal.machinecodinground.SnackLadders.model.Player;
 
 import java.util.HashMap;
 import java.util.Random;

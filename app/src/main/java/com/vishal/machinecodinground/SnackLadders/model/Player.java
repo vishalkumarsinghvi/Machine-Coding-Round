@@ -1,4 +1,4 @@
-package com.vishal.machinecodinground.model;
+package com.vishal.machinecodinground.SnackLadders.model;
 
 public class Player {
     private final int id;
